@@ -15,7 +15,7 @@ class ArticlesTableSeeder extends Seeder
     {
         //
         $faker = Faker::create();
-        foreach (range(1,20) as $index) {
+        foreach (range(1, 8000) as $index) {
             DB::table('articles')->insert([
                 'name' => $faker->word,
                 'description' => $faker->sentence,
